@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Final Project Theodore Collins GIT215 - Contact</title>
+
+        <!-- Author -->
+        <meta name="author" content="Theodore Collins">
+        <meta name="description" content="Final Project Theodore Collins GIT215 Contact Page">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
+        <!-- THIS META TAG IS INCLUDED BECAUSE THIS PAGE IS RESPONSIVE -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;900&display=swap" rel="stylesheet">
+
+        <!-- LINK TO CSS FILE -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <!-- Resort name -->
+            <h1><a href="index.html">Wallaby Way Resort &amp; Spa | Contact</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/swiss-valley.jpg" alt="valley full of pine trees and a small creek in the middle. A short distant snowy mountain range in the background" height="100">
+        </header>
+        <main>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with a *</p>
+                <img src="images/swiss-peak.jpg" alt="jagged snowy mountain peak behind a forested valley with a river in the foreground" height="200">
+            </section>
+            <section>
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank" id="my-form">
+                    <div id="left-form">
+                        <!-- Full name -->
+                        <label for="fullName" class="left-input" id="name-label">Full Name <span style="color: red;">*</span><input type="text" class="inputs" id="full-name" name="full-name" required></label>
+                        
+                        <!-- Email address -->
+                        <label for="email" class="left-input">Email Address <span style="color: red;">*</span><input type="email" class="inputs" id="email" name="email" required></label>                        
+                
+                        <!-- Phone number -->
+                        <label for="phoneNumber" class="left-input" id="phone-label">Phone Number <span style="color: red;">*</span><input type="tel" class="inputs" id="phone-number" name="phone-number" required></label>               
+                    </div>
+                    <div id="right-form">
+                        <!-- Preferred contact method -->
+                        <fieldset>
+                            <legend>Preferred Contact Method <span style="color: red;">*</span></legend>
+                            <label>Email<input type="radio" name="contact-method" value="email" required></label>
+                            <label>Phone<input type="radio" name="contact-method" value="phone" required></label>
+                        </fieldset>
+                
+                        <!-- Comments -->
+                        <label for="comments" id="comment-label">Comments <span style="color: red;">*</span></label>
+                        <textarea id="comments" name="comments" rows="4" required></textarea>
+                
+                        <!-- Submit button -->
+                        <button type="submit">Email Wallaby Way Resort &amp; Spa</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <!-- Copyright info -->
+            <p>Copyright ©2023 - Wallaby Way Resort &amp; Spa</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>

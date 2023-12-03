@@ -1,0 +1,252 @@
+/* Theodore Collins GIT215 Final Submission Stylesheet  */
+
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------ END CSS RESET ------- */
+
+:root{
+    --purple: rgb(69, 78, 247);
+    --plum: plum;
+    --green: rgb(0, 128, 128)
+
+
+    --header-font: 'Lato', sans-serif;
+    --body-font: 'Lobster', sans-serif;
+    /* font-family: 'Seymour One', sans-serif; */
+}
+
+html{
+    background-color: #e5e5f7;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#444cf7 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #444cf7 2px, #e5e5f7 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+    text-align: center;
+    cursor: crosshair;
+}
+
+header{
+    background: linear-gradient(to bottom, rgb(0, 128, 128, 1),rgb(0, 128, 128, 0));
+    background-color:plum;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    /* border: solid 1px; */
+    font-family: var(--header-font);
+    font-weight: bold;
+    font-size: large;
+}
+
+main {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-content: center;
+}
+
+h1, h2, h3, p{
+    margin: 1rem;
+    font-size: x-large;
+}
+
+h1{
+    display: block;
+    padding: .3rem;
+}
+
+h1:hover{
+    display: inline-block;
+    background: linear-gradient(to bottom, rgb(69, 78, 247, 0),rgb(69, 78, 247, 1));
+    padding: .3rem;
+}
+
+h2, h3{
+    font-family: var(--body-font);
+}
+
+p{
+    font-family: var(--header-font);
+}
+
+ul li:hover{
+    background: linear-gradient(to bottom, rgb(69, 78, 247, 0),rgb(69, 78, 247, 1));
+    padding: .3rem;
+}
+
+ul li{
+    display: inline-block;
+    margin-right: 20px;
+    padding: .3rem;
+}
+
+img{
+    margin: .5rem;
+    border: solid 2px;
+}
+
+img:hover{
+    border: solid white 2px;
+}
+
+#h2-content{
+    background-color:plum;
+    padding: 1rem;
+    padding-top: 250px;
+}
+
+#contact{
+    padding: 1rem;
+    background-color:plum;
+    padding-top: 250px;
+}
+
+#h3-content, #my-form{
+    background: linear-gradient(to bottom, rgb(69, 78, 247, 0),rgb(69, 78, 247, 1));
+    background-color:plum;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#left-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    padding-left: 45%;
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+    font-size: x-large;
+    font-family: var(--body-font);
+}
+
+#right-form{
+    display: grid;
+    grid-template-rows: 1fr;
+    padding-top: 1rem;
+    width: 50%;
+    font-size: x-large;
+    font-family: var(--body-font);
+}
+
+label, fieldset{
+    padding: .25rem;
+    margin-top: 2rem;
+    font-size: larger;
+}
+
+#name-label{
+    background-color: #444cf7;
+    border-radius: 1rem;
+}
+
+#phone-label{
+    background-color: #8e2de2;
+    border-radius: 1rem;
+}
+
+.inputs{
+    background-color: rgba(197, 253, 253);
+}
+
+button {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: .25rem;
+    position: relative;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+textarea{
+    background-color: rgba(197, 253, 253);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+      /* Style for the comment input */
+textarea:input {
+    background-color: #e5e5f7;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+legend{
+    background: linear-gradient(to bottom, rgb(69, 78, 247, 0),rgb(0, 128, 128)); 
+    padding: .25rem;
+}
+
+
+footer{
+    background-color: rgb(0, 128, 128);
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
